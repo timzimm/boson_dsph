@@ -1,0 +1,3 @@
+[submodule "jaxsp"]
+	path = jaxsp
+	url = git@github.com:james-alvey-42/jaxsp.git

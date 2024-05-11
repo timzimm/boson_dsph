@@ -1,0 +1,13 @@
+text.usetex : True
+font.size: 8
+
+axes.grid: True
+axes.xmargin: 0 
+
+hatch.linewidth:10
+
+lines.linewidth : 2
+
+legend.frameon: False
+
+savefig.bbox: tight

@@ -1,2 +1,8 @@
+ignore_list
+tags
+sync.sh
+external
+scratch/
+.DS_Store
 *.egg-info
 *__pycache__*

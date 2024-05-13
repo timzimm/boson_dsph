@@ -57,4 +57,4 @@ $ JAX_ENABLE_X64=True mpirun -x JAX_ENABLE_X64 -n <NPROC> python test_equality.p
 ```
 
 **NOTE:** Be aware that depending on the runtime (hyper)parameters, most notably
-`NPROC` and the `m22`, memory consumption can be O(TB).
+`NPROC` and `m22`, memory consumption can be O(TB).

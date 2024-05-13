@@ -28,7 +28,9 @@ TODO
     ├── stats.py                                # mmd fuse implementation
     └── test_equality.py                        # driver for hypothesis test
 ```
+
 ## How to Install
+
 ```bash
 $ git clone git@github.com:timzimm/boson_dsph.git
 $ pip install -e .
@@ -37,8 +39,10 @@ $ pip install -e .
 ## How to Run the Pipeline
 
 Familiarise yourself with the runtime parameters of the pipeline by looking at
-the provided yaml files. The `cache` directory specified therein is used to
-store all pipeline results. Make sure to:
+the provided yaml files. 
+By default all models, i.e. density, potential, eigenstate library and
+wavefunction parameters, are serialised, compressed and written to their
+respective folder in `cache`. For this to work, make sure to:
 ```bash
 $ mkdir cache_dir\{density,potential,eigenstate_library,wavefunction_params,mmd_fuse}
 ```

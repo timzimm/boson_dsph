@@ -4,6 +4,9 @@ TODO
 ## What's in the Box
 ```bash
 .
+├── .md
+├── pyproject.toml
+├── setup.cfg
 ├── README.md
 ├── configs                                     # config files for pipeline run
 │   ├── leoii_15.yaml

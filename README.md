@@ -41,11 +41,11 @@ before exection.
 To run the wave function reconstruction over all posterior samples, execute:
 ```bash
 cd src 
-./gsph2wsph < NPROC > < HOSTFILE > ../configs/<YAML_CONFIG_FILE>
+./gsph2wsph <NPROC> <HOSTFILE> ../configs/<YAML_CONFIG_FILE>
 ```
 
 To run the hypothesis test, execute:
 ```bash
 cd src 
-JAX_ENABLE_X64=True mpirun -x JAX_ENABLE_X64 -n < NPROC > python test_equality.py ../configs/<YAML_CONFIG_FILE>
+JAX_ENABLE_X64=True mpirun -x JAX_ENABLE_X64 -n <NPROC> python test_equality.py ../configs/<YAML_CONFIG_FILE>
 ```

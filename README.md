@@ -55,3 +55,6 @@ To run the hypothesis test, execute:
 $ cd src 
 $ JAX_ENABLE_X64=True mpirun -x JAX_ENABLE_X64 -n <NPROC> python test_equality.py ../configs/<YAML_CONFIG_FILE>
 ```
+
+**NOTE:** Be aware that depending on the runtime (hyper)parameters, most notably
+`NPROC` and the `m22`, memory consumption can be O(TB).

@@ -26,7 +26,10 @@ TODO
     └── test_equality.py                        # driver for hypothesis test
 ```
 ## How to Install
-TODO
+```bash
+git cline git@github.com:timzimm/boson_dsph.git
+pip install -e .
+```
 
 ## How to Run the Pipeline
 

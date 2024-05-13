@@ -1,7 +1,7 @@
-# Summary
+## Summary
 TODO
 
-# What's in the Box
+## What's in the Box
 ```bash
 .
 ├── README.md
@@ -25,10 +25,10 @@ TODO
     ├── stats.py                                # mmd fuse implementation
     └── test_equality.py                        # driver for hypothesis test
 ```
-# How to Install
+## How to Install
 TODO
 
-# How to Run the Pipeline
+## How to Run the Pipeline
 
 Familiarise yourself with the runtime parameters of the pipeline by looking at
 the provided yaml files. The `cache` directory specified therein is used to

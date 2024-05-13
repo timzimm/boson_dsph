@@ -2,6 +2,7 @@
 TODO
 
 # What's in the Box
+```bash
 .
 ├── README.md
 ├── configs                                     # config files for pipeline run
@@ -23,7 +24,7 @@ TODO
     ├── pipeline_for_single_draw_mpi.py         # the pipeline
     ├── stats.py                                # mmd fuse implementation
     └── test_equality.py                        # driver for hypothesis test
-
+```
 # How to Install
 TODO
 

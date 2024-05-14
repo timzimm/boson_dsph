@@ -4,29 +4,28 @@ TODO
 ## What's in the Box
 ```bash
 .
-├── .md
 ├── pyproject.toml
 ├── setup.cfg
 ├── README.md
-├── configs                                     # config files for pipeline run
-│   ├── leoii_15.yaml
-│   ├── leoii_19.yaml
-│   ├── leoii_20.yaml
-│   ├── leoii_21.yaml
-│   ├── leoii_22.yaml
-│   ├── leoii_23.yaml
-│   ├── leoii_24.yaml
+├── configs                                 # config files for pipeline run
+│   ├── leoii_15.yaml                           # 1.5 TByte on disk
+│   ├── leoii_19.yaml                           # 2.3 TByte on disk
+│   ├── leoii_20.yaml                           # 2.5 TByte on disk
+│   ├── leoii_21.yaml                           # 2.9 TByte on disk
+│   ├── leoii_22.yaml                           # 3.1 TByte on disk
+│   ├── leoii_23.yaml                           # 3.4 TByte on disk
+│   ├── leoii_24.yaml                           # 3.8 TByte on disk
 ├── data
-│   ├── coreNFWtides_parameters                 # coreNFWtides posterior samples 
+│   ├── coreNFWtides_parameters             # coreNFWtides posterior samples 
 │   │   ├── output_M200c200_chain_LeoII.txt
 ├── notebook
 │   ├── mnras.mplstyle
 │   ├── plots_prl.ipynb
 └── src
-    ├── gsph2wsph                               # run script for pipelin
-    ├── pipeline_for_single_draw_mpi.py         # the pipeline
-    ├── stats.py                                # mmd fuse implementation
-    └── test_equality.py                        # driver for hypothesis test
+    ├── gsph2wsph                           # run script for pipelin
+    ├── pipeline_for_single_draw_mpi.py     # the pipeline
+    ├── stats.py                            # mmd fuse implementation
+    └── test_equality.py                    # driver for hypothesis test
 ```
 
 ## How to Install
@@ -62,3 +61,6 @@ $ JAX_ENABLE_X64=True mpirun -x JAX_ENABLE_X64 -n <NPROC> python test_equality.p
 
 **NOTE:** Be aware that depending on the runtime (hyper)parameters, most notably
 `NPROC` and `m22`, memory consumption can be O(TB).
+
+With the pipeline data products available, you should be able to execute the
+`plots_prl.pynb` notebook.

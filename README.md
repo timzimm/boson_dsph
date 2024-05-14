@@ -12,7 +12,7 @@ The analysis relies on our reconstruction tool
 ├── pyproject.toml
 ├── setup.cfg
 ├── README.md
-├── configs                                 # config files r pipeline run
+├── configs                                 # config files for pipeline run
 │   ├── leoii_15.yaml                           # 1.5 TByte on disk
 │   ├── leoii_19.yaml                           # 2.3 TByte on disk
 │   ├── leoii_20.yaml                           # 2.5 TByte on disk
@@ -23,11 +23,19 @@ The analysis relies on our reconstruction tool
 ├── data
 │   ├── coreNFWtides_parameters             # coreNFWtides posterior samples 
 │   │   ├── output_M200c200_chain_LeoII.txt
+│   ├── hypothesis_test                     # pipeline output of hypothesis test
+│   │   ├── leoii_15.npz
+│   │   ├── leoii_19.npz
+│   │   ├── leoii_20.npz
+│   │   ├── leoii_21.npz
+│   │   ├── leoii_22.npz
+│   │   ├── leoii_23.npz
+│   │   ├── leoii_24.npz
 ├── notebook
 │   ├── mnras.mplstyle
 │   ├── plots_prl.ipynb
 └── src
-    ├── gsph2wsph                           # run script for pipelin
+    ├── gsph2wsph                           # run script for pipeline
     ├── pipeline_for_single_draw_mpi.py     # the pipeline
     ├── stats.py                            # mmd fuse implementation
     └── test_equality.py                    # driver for hypothesis test

@@ -3,6 +3,7 @@ tags
 sync.sh
 external
 scratch/
+img/
 .DS_Store
 *.egg-info
 *__pycache__*

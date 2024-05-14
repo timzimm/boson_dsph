@@ -3,6 +3,9 @@ Code to reproduce the boson DM mass limit presented in:
 
 TODO: Add bibtex entry
 
+The analysis relies on our reconstruction tool 
+[jaxsp](https://github.com/james-alvey-42/jaxsp).
+
 ## What's in the Box
 ```bash
 .
@@ -66,3 +69,14 @@ $ JAX_ENABLE_X64=True mpirun -x JAX_ENABLE_X64 -n <NPROC> python test_equality.p
 
 With the pipeline data products available, you should be able to execute the
 `plots_prl.pynb` notebook.
+
+## Contributors
+Tim Zimmermann
+James Alvey
+David J.E. Marsh
+Malcolm Fairbarn
+Justin Read
+
+## Acknowledgement
+![eu](https://github.com/timzimm/boson_dsph/blob/94c8984fca269edb8b5a47ca43b346f07e80e1cc/images/eu_acknowledgement_compsci_3.png#gh-light-mode-only)
+![eu](https://github.com/timzimm/boson_dsph/blob/94c8984fca269edb8b5a47ca43b346f07e80e1cc/images/eu_acknowledgement_compsci_3_white.png#gh-dark-mode-only)

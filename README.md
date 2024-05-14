@@ -1,5 +1,7 @@
 ## Summary
-TODO
+Code to reproduce the boson DM mass limit presented in:
+
+TODO: Add bibtex entry
 
 ## What's in the Box
 ```bash
@@ -7,7 +9,7 @@ TODO
 ├── pyproject.toml
 ├── setup.cfg
 ├── README.md
-├── configs                                 # config files for pipeline run
+├── configs                                 # config files r pipeline run
 │   ├── leoii_15.yaml                           # 1.5 TByte on disk
 │   ├── leoii_19.yaml                           # 2.3 TByte on disk
 │   ├── leoii_20.yaml                           # 2.5 TByte on disk
@@ -60,7 +62,7 @@ $ JAX_ENABLE_X64=True mpirun -x JAX_ENABLE_X64 -n <NPROC> python test_equality.p
 ```
 
 **NOTE:** Be aware that depending on the runtime (hyper)parameters, most notably
-`NPROC` and `m22`, memory consumption can be O(TB).
+`NPROC` and `m22`, peak memory consumption can be O(TB).
 
 With the pipeline data products available, you should be able to execute the
 `plots_prl.pynb` notebook.

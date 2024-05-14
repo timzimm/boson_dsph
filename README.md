@@ -45,6 +45,7 @@ The analysis relies on our reconstruction tool
 
 ```bash
 $ git clone git@github.com:timzimm/boson_dsph.git
+$ cd boson_dsph
 $ pip install -e .
 ```
 

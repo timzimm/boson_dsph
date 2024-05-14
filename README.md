@@ -40,8 +40,14 @@ $ git clone git@github.com:timzimm/boson_dsph.git
 $ pip install -e .
 ```
 
-## How to Run the Pipeline
+## How to Reproduce the Plots
+Given the total size of the pipeline data products, we only ship the MMDFuse
+distrubution of the hypothesis test. This is sufficient to execute
+the `plots_prl.pynb` notebook. If you want access to the reconstructed wave
+functions, you will have to run the pipeline yourself. See below for
+instructions how to do this.
 
+## How to Run the Pipeline
 Familiarise yourself with the runtime parameters of the pipeline by looking at
 the provided yaml files. 
 By default all models, i.e. density, potential, eigenstate library and
@@ -66,9 +72,6 @@ $ JAX_ENABLE_X64=True mpirun -x JAX_ENABLE_X64 -n <NPROC> python test_equality.p
 
 **NOTE:** Be aware that depending on the runtime (hyper)parameters, most notably
 `NPROC` and `m22`, peak memory consumption can be O(TB).
-
-With the pipeline data products available, you should be able to execute the
-`plots_prl.pynb` notebook.
 
 ## Contributors
 Tim Zimmermann

@@ -74,11 +74,11 @@ $ JAX_ENABLE_X64=True mpirun -x JAX_ENABLE_X64 -n <NPROC> python test_equality.p
 `NPROC` and `m22`, peak memory consumption can be O(TB).
 
 ## Contributors
-Tim Zimmermann
-James Alvey
-David J.E. Marsh
-Malcolm Fairbarn
-Justin Read
+Tim Zimmermann  
+James Alvey  
+David J.E. Marsh  
+Malcolm Fairbarn  
+Justin Read  
 
 ## Acknowledgement
 ![eu](https://github.com/timzimm/boson_dsph/blob/94c8984fca269edb8b5a47ca43b346f07e80e1cc/images/eu_acknowledgement_compsci_3.png#gh-light-mode-only)

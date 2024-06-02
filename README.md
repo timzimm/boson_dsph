@@ -31,6 +31,9 @@ The analysis relies on our reconstruction tool
 │   │   ├── leoii_22.npz
 │   │   ├── leoii_23.npz
 │   │   ├── leoii_24.npz
+│   ├── density
+│   │   ├── density_002.3.npz 
+│   │   ├── density_0023.0.npz 
 ├── notebook
 │   ├── mnras.mplstyle
 │   ├── plots_prl.ipynb
@@ -51,7 +54,7 @@ $ pip install -e .
 
 ### How to Reproduce the Plots
 Given the total size of the pipeline data products, we only ship the MMDFuse
-distrubution of the hypothesis test. This is sufficient to execute
+distribution of the hypothesis test. This is sufficient to execute
 the `plots_prl.pynb` notebook. If you want access to the reconstructed wave
 functions, you will have to run the pipeline yourself. See below for
 instructions how to do this.

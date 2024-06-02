@@ -35,13 +35,13 @@ The analysis relies on our reconstruction tool
 │   │   ├── density_002.3.npz 
 │   │   ├── density_0023.0.npz 
 ├── notebook
-│   ├── mnras.mplstyle
 │   ├── plots_prl.ipynb
-└── src
+└── boson_dsph
     ├── gsph2wsph                           # run script for pipeline
     ├── pipeline_for_single_draw_mpi.py     # the pipeline
     ├── stats.py                            # mmd fuse implementation
     └── test_equality.py                    # driver for hypothesis test
+    └── density.py                          # generates ../data/density/*.npz
 ```
 
 ### How to Install
@@ -72,14 +72,21 @@ before exection.
 
 To run the wave function reconstruction over all posterior samples, execute:
 ```bash
-$ cd src 
+$ cd boson_dsph 
 $ ./gsph2wsph <NPROC> <HOSTFILE> ../configs/<YAML_CONFIG_FILE>
 ```
 
 To run the hypothesis test, execute:
 ```bash
-$ cd src 
+$ cd boson_dsph 
 $ JAX_ENABLE_X64=True mpirun -x JAX_ENABLE_X64 -n <NPROC> python test_equality.py ../configs/<YAML_CONFIG_FILE>
+```
+
+To generate the ensemble of spherically averaged wave densities (Fig. 1),
+execute:
+```bash
+$ cd boson_dsph 
+$ JAX_ENABLE_X64=True mpirun -x JAX_ENABLE_X64 -n <NPROC> python density.py ../configs/<YAML_CONFIG_FILE>
 ```
 
 **NOTE:** Be aware that depending on the runtime (hyper)parameters, most notably

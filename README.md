@@ -1,5 +1,5 @@
 ### Summary & Attribution
-Code to reproduce the boson DM mass limit presented in (arXiv:2405.20374)[https://arxiv.org/pdf/2405.20374]:
+Code to reproduce the boson DM mass limit presented in [arXiv:2405.20374](https://arxiv.org/pdf/2405.20374):
 We kindly ask you to cite this work as:
 ```
 @article{Zimmermann:boson-dsph,

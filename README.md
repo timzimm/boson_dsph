@@ -1,7 +1,17 @@
-### Summary
-Code to reproduce the boson DM mass limit presented in:
-
-TODO: Add bibtex entry
+### Summary & Attribution
+Code to reproduce the boson DM mass limit presented in (arXiv:2405.20374)[https://arxiv.org/pdf/2405.20374]:
+We kindly ask you to cite this work as:
+```
+@article{Zimmermann:boson-dsph,
+    author = "Zimmermann, Tim and Alvey, James and Marsh, David J. E. and Fairbairn, Malcolm and Read, Justin I.",
+    title = "{Dwarf galaxies imply dark matter is heavier than $\mathbf{2.2 \times 10^{-21}} \, \mathbf{eV}$}",
+    eprint = "2405.20374",
+    archivePrefix = "arXiv",
+    primaryClass = "astro-ph.CO",
+    month = "5",
+    year = "2024"
+}
+```
 
 The analysis relies on our reconstruction tool 
 [jaxsp](https://github.com/james-alvey-42/jaxsp).
